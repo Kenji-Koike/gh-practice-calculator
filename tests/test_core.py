@@ -46,3 +46,14 @@ class TestDivide:
     def test_zero_division(self, calc):
         with pytest.raises(ZeroDivisionError):
             calc.divide(5, 0)
+
+
+class TestPower:
+    def test_positive_exp(self, calc):
+        assert calc.power(2, 10) == 1024
+
+    def test_zero_exp(self, calc):
+        assert calc.power(5, 0) == 1
+
+    def test_negative_exp(self, calc):
+        assert calc.power(2, -1) == pytest.approx(0.5)
