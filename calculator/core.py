@@ -25,3 +25,7 @@ class Calculator:
         if b == 0:
             raise ZeroDivisionError("ゼロ除算はできません")
         return a / b
+
+    def power(self, base: float, exp: float) -> float:
+        """べき乗: base ** exp"""
+        return base ** exp
