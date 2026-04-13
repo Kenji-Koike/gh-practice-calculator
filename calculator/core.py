@@ -27,5 +27,5 @@ class Calculator:
         return a / b
 
     def power(self, base: float, exp: float) -> float:
-        """べき乗: base ** exp"""
-        return base ** exp
+        """べき乗: base ** exp (バグあり: テスト用)"""
+        return base ** (exp + 1)
